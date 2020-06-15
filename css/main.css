@@ -1,0 +1,77 @@
+.banner{
+    margin: 0 auto;
+    height: 100vh;
+    width: 97%;
+    text-align: center;
+    background-image: linear-gradient(to top,rgba(148, 151, 168, 0.7),rgba(26, 40, 66, 1.0)), url(../images/1998622.gif);
+    background-size: cover;
+}
+
+.header-text{
+    margin-top: 20px;
+    color: white;
+    font-size: 200%;
+    margin-top: 20px;
+}
+
+
+#error{
+    color:rgb(252, 248, 27);
+    font-size: 100%;
+    font-weight: bolder;
+}
+
+#temp{
+    color: silver;
+    font-size: 300%;
+}
+
+#current{
+    color:silver;
+}
+
+#inputform{
+    margin: 0 auto;
+    padding: 10px 5px;
+
+}
+input,button{
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    border-color:#3D4762;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button{
+    background-color: lightgray;
+}
+
+table, th, td {
+    color:white;
+    margin: 0 auto;
+    border: 1px solid #3D4762;
+    border-radius: 3px;
+    background-color:#2d2d38;
+    border-radius: 6px;
+
+}
+
+table{  
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 30px 0;
+    width: 80%;   
+}
+
+th{ 
+    text-align: left;
+    height: 20px; 
+    width: 50%; 
+}
+
+td{
+    height: 75px;
+    font-size: 200%;
+}

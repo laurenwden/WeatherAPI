@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/main.js"></script>
+<title>Weather API</title>
+</head>
+<body class="banner">
+<div  class="container">
+    <h1 class="header-text">Today's Weather</h1>      
+        <div class="row">       
+            <div class="col-sm-4 offset-sm-4">
+                
+                <!--City/State Entry Form-->
+                <div class="col-lg-6 offset-lg-3">
+                    <form class="form-group" action="" name="inputForm" id="inputForm">
+                        <input type="text" name="city" id="city" placeholder="Enter City">
+                        <input type="text" name="state" id="state" placeholder="Enter State">
+                        <br>
+                        <!--Submit Buttong-->
+                        <button id="submitButton" onClick="event.preventDefault();getJSON()">Get Forecast</button>
+                    </form>
+                </div>
+                
+                <!--Error Display-->
+                <p id="error"></p>
+
+                <!--Current Temp Display-->
+                <div>
+                    <h5 id="current"></h5>
+                    <h3 id="temp"></h3>
+                </div>
+
+                <!--Output Table-->
+                <div>
+                    <table id="table">
+                        
+                        <tr>
+                            <th class="table-headers"> High</th>
+                            <th class="table-headers"> Low</th>
+                        </tr>
+                        <tr>
+                            <td id="high"></td>
+                            <td id="low"></td>
+                        </tr>
+                        <tr>
+                            <th class="table-headers"> Forecast</th>
+                            <th class="table-headers"> Humidity</th>
+                        </tr>
+                        <tr>
+                            <td  id="forecast"></td>
+                            <td id="humidity"></td>
+                        </tr>
+                    </table>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
